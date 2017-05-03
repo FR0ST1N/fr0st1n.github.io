@@ -1,0 +1,43 @@
+name: FR0ST1N's Site
+description: The game design for life is flawed.
+meta_description: "Yes, this is my site."
+
+aboutPage: true
+
+markdown: kramdown
+highlighter: rouge
+
+gems: [jekyll-paginate]
+paginate: 20
+baseurl: /
+domain_name: 'https://fr0st1n.github.io'
+google_analytics: 'UA-98462905-1'
+disqus: true
+disqus_shortname: 'fr0st1n'
+
+# Details for the RSS feed generator
+url:            'https://fr0st1n.github.io'
+author:         'FR0ST1N'
+authorTwitter:  'FR0ST1N'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
